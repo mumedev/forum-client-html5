@@ -30,8 +30,10 @@ function page_header($logout_btn) {
                     title="Logout">
                     Logout
                 </button>
-            </div>
 <?php
     }
+?>
+            </div>
+<?php
 }
 ?>

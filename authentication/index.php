@@ -18,6 +18,8 @@
         <script type="text/javascript" src="../js/authentication.js"></script>
     </head>
     <body>
+        
+        
         <!-- Login -->
         <div data-role="page" id="login-page">
             <?php page_header(false); ?>
@@ -27,16 +29,18 @@
                     <input type="text" name="username" id="username"/>
                     <label for="password">Password:</label>
                     <input type="password" name="password" id="password"/>
-                    <input type="button" value="Login" onclick="login();"/>
-                    <a data-role="button" title="Register" href="#register-page">
-                        Register
-                    </a>
+                    <input type="button" value="Login" title="Login" onclick="login();"/>
                 </form>
+                <a data-role="button" title="Register" href="#register-page">
+                    Register
+                </a>
             </div>
             <?php page_footer(); ?>
         </div>
         
-        <!-- Home -->
+        
+        
+        <!-- Register -->
         <div data-role="page" id="register-page">
             <?php page_header(false); ?>
             <div data-role="content" data-theme="c">
@@ -45,13 +49,19 @@
                     <input type="text" name="username" id="username"/>
                     <label for="password">Password:</label>
                     <input type="password" name="password" id="password"/>
-                    <input type="button" value="Login" onclick="register();"/>
-                    <a data-role="button" title="Register" href="#login-page">
-                        Login
-                    </a>
+                    <label for="emailaddress">Email Address:</label>
+                    <input type="email" name="emailaddress" id="emailaddress"/>
+                    <label for="homepage">Homepage:</label>
+                    <input type="url" name="homepage" id="homepage"/>
+                    <input type="button" value="Register" onclick="register();"/>
                 </form>
+                <a data-role="button" title="Register" href="#login-page">
+                    Login
+                </a>
             </div>
             <?php page_footer(); ?>
         </div>
+        
+        
     </body>
 </html>
