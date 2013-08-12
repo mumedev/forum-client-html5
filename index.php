@@ -16,14 +16,14 @@
         <script type="text/javascript" src="js/forum-api/forum.api.js"></script>
         <script type="text/javascript" src="js/storage.js"></script>
         <script type="text/javascript" src="js/init.js"></script>
-        <script type="text/javascript" src="js/logout.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
         
         
         <!-- Home -->
         <div data-role="page" id="home-page">
-            <?php page_header(); ?>
+            <?php page_header(true); ?>
             <div data-role="content" data-theme="c">
                 Home!
             </div>
@@ -34,7 +34,7 @@
         
         <!-- Question -->
         <div data-role="page" id="question-page">
-            <?php page_header(); ?>
+            <?php page_header(true); ?>
             <div data-role="content" data-theme="c">
                 Question!
             </div>
@@ -45,7 +45,7 @@
         
         <!-- Profile -->
         <div data-role="page" id="profile-page">
-            <?php page_header(); ?>
+            <?php page_header(true); ?>
             <div data-role="content" data-theme="c">
                 Question!
             </div>

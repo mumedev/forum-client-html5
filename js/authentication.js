@@ -9,7 +9,7 @@ function login() {
     var username = $('#login-form input:text#username').val();
     var password = $('#login-form input:password#password').val();
     
-    _FORUM.login(username, password, function(key) {
+    _FORUM.authentication.startsession(null, username, password, function(key) {
         var obj = {
             username : username,
             key      : key

@@ -7,7 +7,7 @@ var _FORUM = new Forum();
  */
 function logout() {
     var user = localStorage.getObject('forum_user');
-    _FORUM.login(user.username, user.key, function() {
+    _FORUM.authentication.endsession(null, user.username, user.key, function() {
         localStorage.removeItem('forum_user');
         window.location.href = 'login/';
     });
