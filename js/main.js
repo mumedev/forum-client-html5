@@ -9,6 +9,6 @@ function logout() {
     var user = localStorage.getObject('forum_user');
     _FORUM.authentication.endsession(null, user.username, user.key, function() {
         localStorage.removeItem('forum_user');
-        window.location.href = 'login/';
+        window.location.href = 'authentication/';
     });
 };
