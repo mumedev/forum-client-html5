@@ -15,7 +15,6 @@
         <script type="text/javascript" src="js/jquery/jquery.mobile-1.2.0.min.js"></script>
         <script type="text/javascript" src="js/forum-api/forum.api.js"></script>
         <script type="text/javascript" src="js/storage.js"></script>
-        <script type="text/javascript" src="js/init.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
