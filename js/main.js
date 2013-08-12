@@ -9,3 +9,5 @@
 if (! localStorage.getObject('forum_user')) {
     window.location.href = 'authentication/';
 }
+
+loadprofile();
