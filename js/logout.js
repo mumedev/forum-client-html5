@@ -1,4 +1,4 @@
-var _API = 'http://localhost/forum-backend/index.php/api/';
+var _FORUM = new Forum();
 
 /**
  * Log the active user off. Destroy the session on the server,
@@ -7,16 +7,8 @@ var _API = 'http://localhost/forum-backend/index.php/api/';
  */
 function logout() {
     var user = localStorage.getObject('forum_user');
-    $.ajax({
-        url : _API + 'authentication_endsession/',
-        dataType : 'json',
-        type : 'get',
-        data : {
-            username : user.username,
-            session  : user.key
-        }
-    }).done(function () {
+    _FORUM.login(user.username, user.key, function() {
         localStorage.removeItem('forum_user');
         window.location.href = 'login/';
     });
-}
+};

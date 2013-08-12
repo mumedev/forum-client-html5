@@ -8,12 +8,13 @@
         <title>
             CAMPUS FORUM WEB APP
         </title>
-        <link rel="stylesheet" href="../css/jquery.mobile-1.2.0.min.css" />
-        <link rel="stylesheet" href="../css/default.css" />
-        <script src="../js/jquery/jquery-1.7.2.min.js"></script>
-        <script src="../js/jquery/jquery.mobile-1.2.0.min.js"></script>
-        <script src="../js/storage.js"></script>
-        <script src="../js/login.js"></script>
+        <link type="text/css" rel="stylesheet" href="../css/jquery.mobile-1.2.0.min.css" />
+        <link type="text/css" rel="stylesheet" href="../css/default.css" />
+        <script type="text/javascript" src="../js/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="../js/jquery/jquery.mobile-1.2.0.min.js"></script>
+        <script type="text/javascript" src="../js/forum-api/forum.api.js"></script>
+        <script type="text/javascript" src="../js/storage.js"></script>
+        <script type="text/javascript" src="../js/login.js"></script>
     </head>
     <body>
         <!-- Home -->
