@@ -202,7 +202,7 @@ Forum = function () {
             $.ajax({
                 url      : _API + 'user_register/',
                 dataType : 'json',
-                type     : 'get',
+                type     : 'post',
                 data     : data
             }).done(callback);
         },

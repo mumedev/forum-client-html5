@@ -24,10 +24,10 @@ function login() {
  * @returns {undefined}
  */
 function register() {
-    var username = $('#register-form input:text#username').val();
-    var password = $('#register-form input:password#password').val();
-    var email    = $('#register-form input:email#emailaddress').val();
-    var homepage = $('#register-form input:url#homepage').val();
+    var username = $('#register-form input#username').val();
+    var password = $('#register-form input#password').val();
+    var email    = $('#register-form input#emailaddress').val();
+    var homepage = $('#register-form input#homepage').val();
     
     _FORUM.user.register(username, password, email, homepage,
         function() {
