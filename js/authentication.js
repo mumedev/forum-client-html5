@@ -18,3 +18,29 @@ function login() {
         window.location.href = '../';
     });
 };
+
+/**
+ * Creates a new user account.
+ * @returns {undefined}
+ */
+function register() {
+    var username = $('#register-form input:text#username').val();
+    var password = $('#register-form input:password#password').val();
+    var email    = $('#register-form input:email#emailaddress').val();
+    var homepage = $('#register-form input:url#homepage').val();
+    
+    _FORUM.user.register(username, password, email, homepage,
+        function() {
+            _FORUM.authentication.startsession(null, username, password,
+                function(key) {
+                    var obj = {
+                        username : username,
+                        key      : key
+                    };
+                    localStorage.setObject('forum_user', obj);
+                    window.location.href = '../';
+                }
+            );
+        }
+    );
+};

@@ -184,8 +184,27 @@ Forum = function () {
                 data     : data
             }).done(callback);
         },
-        register : function () {
-            
+        /**
+         * 
+         * @param {type} username
+         * @param {type} password
+         * @param {type} emailaddress
+         * @param {type} homepage
+         * @param {type} callback
+         * @returns {undefined}
+         */
+        register : function (username, password, emailaddress, homepage, callback) {
+            var data = {};
+            if (username)     data['username']      = username;
+            if (password)     data['password']      = password;
+            if (emailaddress) data['emailaddress']  = emailaddress;
+            if (homepage)     data['homepage']      = homepage;
+            $.ajax({
+                url      : _API + 'user_register/',
+                dataType : 'json',
+                type     : 'get',
+                data     : data
+            }).done(callback);
         },
         search : function () {
             
